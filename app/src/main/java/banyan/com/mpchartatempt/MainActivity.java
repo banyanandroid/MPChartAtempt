@@ -38,8 +38,8 @@ public class MainActivity extends AppCompatActivity {
     int achive = 0;
     int value = 0;
 
-    ArrayList<BarEntry> Arraylist_plan = null;
-    ArrayList<BarEntry> Arraylist_achive = null;
+    ArrayList<BarEntry> Arraylist_plan;
+    ArrayList<BarEntry> Arraylist_achive;
 
     ArrayList<BarEntry> valueSet1 = null;
     ArrayList<BarEntry> valueSet2 = null;
@@ -102,11 +102,9 @@ public class MainActivity extends AppCompatActivity {
                             plan = obj1.getInt("plan");
                             achive = obj1.getInt("achive");
 
-                            Arraylist_plan = new ArrayList<>();
                             v1e1 = new BarEntry(plan, i);
                             Arraylist_plan.add(v1e1);
 
-                            Arraylist_achive = new ArrayList<>();
                             v2e1 = new BarEntry(achive, i);
                             Arraylist_achive.add(v2e1);
 
